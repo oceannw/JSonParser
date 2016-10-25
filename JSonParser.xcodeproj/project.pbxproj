@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		11088D3A1DBF176200EB4D62 /* JSonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 11088D381DBF176200EB4D62 /* JSonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11088D461DBF177C00EB4D62 /* JSonData+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11088D421DBF177C00EB4D62 /* JSonData+Util.swift */; };
+		11088D471DBF177C00EB4D62 /* JSonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11088D431DBF177C00EB4D62 /* JSonData.swift */; };
+		11088D481DBF177C00EB4D62 /* JSonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11088D441DBF177C00EB4D62 /* JSonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11088D351DBF176200EB4D62 /* JSonParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSonParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11088D381DBF176200EB4D62 /* JSonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSonParser.h; sourceTree = "<group>"; };
 		11088D391DBF176200EB4D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11088D421DBF177C00EB4D62 /* JSonData+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSonData+Util.swift"; sourceTree = "<group>"; };
+		11088D431DBF177C00EB4D62 /* JSonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonData.swift; sourceTree = "<group>"; };
+		11088D441DBF177C00EB4D62 /* JSonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		11088D371DBF176200EB4D62 /* JSonParser */ = {
 			isa = PBXGroup;
 			children = (
+				11088D401DBF177C00EB4D62 /* Sources */,
 				11088D381DBF176200EB4D62 /* JSonParser.h */,
 				11088D391DBF176200EB4D62 /* Info.plist */,
 			);
 			path = JSonParser;
+			sourceTree = "<group>";
+		};
+		11088D401DBF177C00EB4D62 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11088D421DBF177C00EB4D62 /* JSonData+Util.swift */,
+				11088D431DBF177C00EB4D62 /* JSonData.swift */,
+				11088D441DBF177C00EB4D62 /* JSonParser.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11088D461DBF177C00EB4D62 /* JSonData+Util.swift in Sources */,
+				11088D471DBF177C00EB4D62 /* JSonData.swift in Sources */,
+				11088D481DBF177C00EB4D62 /* JSonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +268,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JSonParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.oceannw.JSonParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -267,6 +288,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JSonParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.oceannw.JSonParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +316,7 @@
 				11088D3F1DBF176200EB4D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
